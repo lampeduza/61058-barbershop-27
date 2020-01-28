@@ -6,7 +6,170 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <!-- header -->
+    <header class="header">
+      <nav class="navigation">
+        <!-- logo -->
+        <a class="navigation__link">
+          <img class="navigation__picture" src="" width="371" heigt="155" alt="Логотип сайта Барбершопа Бородинского">
+        </a>
 
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="info.html">Информация</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="news.html">Новости</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <!-- login -->
+        <ul class="navigation__list navigation__list_login">
+          <li class="navigation__item navigation__item_login">
+            <button class="navigation__link navigation__link_login" type="button">Вход</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+
+      <!-- advantages -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+
+        <ul class="advantages-list">
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Быстро</h3>
+            <p class="advantages-list__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Круто</h3>
+            <p class="advantages-list__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__title">Дорого</h3>
+            <p class="advantages-list__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="">
+
+        <!-- news -->
+        <section class="news">
+          <h2 class="news__title">Новости</h2>
+          <ul class="new__list">
+            <li class="news__item">
+              <p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+              <time class="news__date" datetime="2019-01-11">11 января</time>
+            </li>
+            <li class="news__item">
+              <p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+              <time class="news__date" datetime="2019-01-18">18 января</time>
+            </li>
+          </ul>
+
+          <a class="news__link link" href="news.html">Все новости</a>
+        </section>
+
+        <!-- gallery -->
+        <section class="gallery">
+          <h2 class="gallery__title">Фотогалерея</h2>
+          <figure class="gallery__figure">
+            <figcaption class="visually-hidden">Интерьер Барбершопа</figcaption>
+            <a class="gallery__figure-link" href="#">
+              <img class="gallery__image" src="" width="286" height="164" alt="Изображение интерьера Барбершопа">
+            </a>
+          </figure>
+
+          <button class="gallery__link link gallery__link_previously" type="button">Назад</button>
+          <button class="gallery__link link gallery__link_next" type="button">Вперед</button>
+        </section>
+      </div>
+
+      <div class="">
+
+        <!-- contact information -->
+        <section class="information">
+          <h2 class="information__title">Контактная информация</h2>
+          <p class="information__address information__text">БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br> ТЕЛЕФОН: +7 (495) 666-02-66</p>
+          <p class="information__schedule information__text">ВРЕМЯ РАБОТЫ:<br> ПН—ПТ: С 10:00 ДО 22:00<br> СБ—ВС: С 10:00 ДО 19:00</p>
+
+          <a class="information__link link" href="map.html">Как проехать</a>
+          <a class="information__link link" href="contacts.html">Обратная связь</a>
+        </section>
+
+         <!-- registration -->
+         <section class="registration">
+           <h2 class="registration__title">Записаться</h2>
+           <p class="registration__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+
+           <!-- здесь будет форма -->
+           <label class="registration__label" for="date-field">Дата</label>
+           <input class="registration__input" type="text" name="date" id="date-field" placeholder="08.10.2017">
+           <label class="registration__label" for="time-field">Время</label>
+           <input class="registration__input" type="text" name="time" id="time-field" placeholder="10:00">
+           <label class="registration__label" for="name-field">Ваше имя</label>
+           <input class="registration__input" type="text" name="name" id="name-field" placeholder="Борода">
+           <label class="registration__label" for="number-field">Телефон</label>
+           <input class="registration__input" type="text" name="number" id="number-field" placeholder="+7 123 456-78-90">
+
+           <input type="submit" value="Отправить">
+         </section>
+
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+
+      <!-- address -->
+      <div class="footer__address">
+        <p class="footer__address-text">БАРБЕРШОП «БОРОДИНСКИЙ» АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 КАК НАС НАЙТИ? ТЕЛЕФОН: +7 (495) 666-02-66</p>
+      </div>
+
+      <!-- social -->
+      <div class="footer__social">
+        <b class="footer__social-slogan">Давайт дружить!</B>
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><a class="footer__social-link" href="#" aria-label="В вконтакте"></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#" aria-label="Фейсбук"></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#" aria-label="Инстаграм"></a></li>
+        </ul>
+      </div>
+
+      <!-- developed by -->
+      <div class="developed-by">
+        <p class="developed-by__text">Разработано:
+          <a class="developed-by__link link" href="https://htmlacademy.ru/intensive/htmlcss">Html academy</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- modal login -->
+    <section class="modal-login">
+      <h2 class="modal-login__title">Личный кабинет</h2>
+      <p class="modal-login__text">ВВедите пожалуйста свой логин и пароль</p>
+
+      <input class="modal-login__input modal-login__input_login" type="text" name="login" id="login-field" placeholder="Логин">
+      <input class="modal-login__input modal-login__input_password" type="password" name="password" id="password-field" placeholder="Пароль">
+
+      <input class="" type="checkbox" name="remember" id="remember-field" checked>
+      <label class="modal-login__input-label" for="remember-field">Запомните меня</label>
+
+      <a class="modal-login__link-forgot" href="#">Я забыл пароль!</a>
+
+      <a class="modal-login__link link" href="#">Войти</a>
+
+      <button class="modal-login__button modal__button" type="button" aria-label="Закрыть форму входа на сайт"></button>
+    </section>
+
+    <!-- modal map -->
+    <section class="modal-map">
+      <h2 class="modal-map__title">Как до нас добраться</h2>
+      <button class="modal-map__button modal__button" type="button" aria-label="Закрыть карту"></button>
+    </section>
   </body>
 </html>

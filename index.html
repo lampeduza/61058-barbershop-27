@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Barbershop: Главная страница</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -14,20 +16,24 @@
         <img class="navigation__image" src="img/index-logo.svg" width="371" heigt="155" alt="Логотип сайта Барбершопа Бородинского">
       </a>
 
-      <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="info.html">Информация</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="news.html">Новости</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакты</a></li>
-      </ul>
+      <div class="navigation__wrapper">
+        <div class="navigation__container container">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="info.html">Информация</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="news.html">Новости</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакты</a></li>
+          </ul>
 
-      <!-- login -->
-      <ul class="navigation__list navigation__list_login login">
-        <li class="login__item login__item_login">
-          <a class="login__link login__link_login" href="login.html">Вход</a>
-        </li>
-      </ul>
+          <!-- login -->
+          <ul class="navigation__list_login login">
+            <li class="login__item login__item_login">
+              <a class="login__link login__link_login" href="login.html">Вход</a>
+            </li>
+          </ul>
+        </div> <!-- end container -->
+      </div> <!-- nav wrapper -->
     </nav>
   </header>
 
@@ -36,31 +42,31 @@
     <h1 class="visually-hidden">Барбершоп Бородинский</h1>
 
     <!-- advantages -->
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="visually-hidden">Преимущества</h2>
 
-      <ul class="advantages-list">
-        <li class="advantages-list__item" tabindex="0">
-          <h3 class="advantages-list__title">Быстро</h3>
-          <p class="advantages-list__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item" tabindex="0">
+          <h3 class="advantages__title">Быстро</h3>
+          <p class="advantages__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
         </li>
-        <li class="advantages-list__item" tabindex="0">
-          <h3 class="advantages-list__title">Круто</h3>
-          <p class="advantages-list__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+        <li class="advantages__item" tabindex="0">
+          <h3 class="advantages__title">Круто</h3>
+          <p class="advantages__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
         </li>
-        <li class="advantages-list__item" tabindex="0">
-          <h3 class="advantages-list__title">Дорого</h3>
-          <p class="advantages-list__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+        <li class="advantages__item" tabindex="0">
+          <h3 class="advantages__title">Дорого</h3>
+          <p class="advantages__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
         </li>
       </ul>
     </section>
 
-    <div class="">
+    <div class="index-column container">
 
       <!-- news -->
       <section class="news" tabindex="0">
         <h2 class="news__title">Новости</h2>
-        <ul class="new__list">
+        <ul class="news__list">
           <li class="news__item" tabindex="0">
             <p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
             <time class="news__date" datetime="2019-01-11">11 января</time>
@@ -71,7 +77,7 @@
           </li>
         </ul>
 
-        <a class="news__link link" href="news.html">Все новости</a>
+        <a class="news__link button" href="news.html">Все новости</a>
       </section>
 
       <!-- gallery -->
@@ -81,17 +87,19 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-            <img class="gallery__image" src="img/gallery-img.jpg" width="286" height="164" alt="Изображение интерьера Барбершопа">
-          </a>
+              <img class="gallery__image" src="img/gallery-img.jpg" width="286" height="164" alt="Изображение интерьера Барбершопа">
+            </a>
           </li>
         </ul>
 
-        <button class="gallery__link link gallery__link_previously" type="button">Назад</button>
-        <button class="gallery__link link gallery__link_next" type="button">Вперед</button>
+        <div class="gallery__link-wrapper link-wrapper">
+          <button class="gallery__link button gallery__link_previously" type="button">Назад</button>
+          <button class="gallery__link button gallery__link_next" type="button">Вперед</button>
+        </div>
       </section>
     </div>
 
-    <div class="">
+    <div class="index-column container">
 
       <!-- contact information -->
       <section class="information">
@@ -99,8 +107,9 @@
         <p class="information__address information__text">БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br> <a class="information__number" href="tel:+74956660266">ТЕЛЕФОН: +7 (495) 666-02-66</a></p>
         <p class="information__schedule information__text">ВРЕМЯ РАБОТЫ:<br> ПН—ПТ: С 10:00 ДО 22:00<br> СБ—ВС: С 10:00 ДО 19:00</p>
 
-        <a class="information__link link" href="map.html">Как проехать</a>
-        <a class="information__link link" href="contacts.html">Обратная связь</a>
+        <div class="information__link-wrapper">
+        <a class="information__link information__link_map button" href="map.html">Как проехать</a>
+        <a class="information__link button" href="contacts.html">Обратная связь</a>
       </section>
 
       <!-- registration -->
@@ -126,7 +135,7 @@
          <label class="form__label" for="number-field">Телефон</label>
          <input class="form__input" type="text" name="number" id="number-field" placeholder="+7 123 456-78-90">
        </p>
-       <button class="form__button link" type="submit">Отправить</button>
+       <button class="form__button button" type="submit">Отправить</button>
      </form>
    </section>
 
@@ -136,16 +145,17 @@
 <!-- footer -->
 <footer class="footer">
 
+  <div class="footer__wrapper container">
   <!-- address -->
   <div class="footer__address address">
-    <p class="address__text">БАРБЕРШОП «БОРОДИНСКИЙ» АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 КАК НАС НАЙТИ? ТЕЛЕФОН:
+    <p class="address__text">БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <a class="address__link" href="#">КАК НАС НАЙТИ?</a><br> ТЕЛЕФОН:
       <a class="address__number" href="tel:+74956660266">+7 (495) 666-02-66</a>
     </p>
   </div>
 
   <!-- social -->
   <div class="footer__social social">
-    <b class="social__slogan">Давайт дружить!</B>
+    <b class="social__slogan">Давайт дружить!</b>
       <ul class="social__list">
 
         <li class="social__item">
@@ -178,9 +188,10 @@
     <!-- developed by -->
     <div class="developed-by">
       <p class="developed-by__text">Разработано:
-        <a class="developed-by__link link" href="https://htmlacademy.ru/intensive/htmlcss">Html academy</a>
+        <a class="developed-by__link button" href="https://htmlacademy.ru/intensive/htmlcss">Html academy</a>
       </p>
     </div>
+  </div>
   </footer>
 
   <!-- modal login -->
